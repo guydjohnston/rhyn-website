@@ -47,7 +47,6 @@ body {
     display: flex;
     max-height: 500px;
     width: 100%;
-    
 }
 
 .image-container {
@@ -83,3 +82,29 @@ body {
     text-align: center;
 }
 
+@media (max-width: 800px) {
+    .text-container h1 {
+        font-size: 3rem;
+        padding: 24px;
+    }
+
+    .text-container h2 {
+        font-size: 1rem;
+        padding: 24px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .image-container img {
+        object-position: bottom;
+        object-fit: cover;
+    }
+
+    .text-container h1, .text-container h2 {
+        padding: 16px;
+    }
+}
