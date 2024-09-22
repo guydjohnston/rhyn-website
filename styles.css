@@ -36,6 +36,8 @@ header {
 
 .social-icons img {
     padding: 4px;
+    height: 50px;
+    width: 50px;
 }
 
 .social-icons a:hover {
@@ -90,7 +92,6 @@ section {
     height: 100%;
     object-fit: cover;
     object-position: bottom;
-    
 }
 
 .text-container {
@@ -114,10 +115,15 @@ section {
 }
 
 .video-embed {
-    /*width: 560px;*/
-    /*height: 315px;*/
     width: 784px;
     height: 441px;
+    border-radius: 8px;
+}
+
+.music-embed {
+    border-radius: 8px;
+    width: 80%;
+    height: 400px;
 }
 
 @media (max-width: 800px) {
