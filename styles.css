@@ -1,3 +1,7 @@
+:root {
+    scroll-padding-top: 112px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -72,7 +76,6 @@ main {
 
 section {
     margin-bottom: 24px;
-    text-align: center;
 }
 
 .header-container {
@@ -118,12 +121,47 @@ section {
     width: 784px;
     height: 441px;
     border-radius: 8px;
+    text-align: center;
+}
+
+#video, #music {
+    text-align: center;
 }
 
 .music-embed {
     border-radius: 8px;
     width: 80%;
     height: 400px;
+    text-align: centre;
+}
+
+.bio-container {
+    background-color: #333;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.bio-container img {
+    border-radius: 50%;
+}
+
+.bio-container img, .bio-container h2, .bio-container ul, .bio-container p {
+    margin: 16px;
+}
+
+.bio-container h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.bio-container ul {
+    list-style: none;
+    text-align: center;
+}
+
+.bio-container p {
+    text-align: initial;
 }
 
 @media (max-width: 800px) {
