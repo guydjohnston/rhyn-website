@@ -30,6 +30,8 @@ header {
     max-width: 1400px;
     margin: 0 auto;
     background-color: #111;
+    display: flex;
+    flex-direction: column;
 }
 
 .social-icons {
@@ -51,12 +53,12 @@ header {
 .navbar {
     display: flex;
     justify-content: flex-end;
+    padding: 16px 0;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    padding: 16px 0;
 }
 
 .nav-links a {
@@ -111,25 +113,38 @@ section {
     font-size: 3rem;
     text-align: center;
     font-weight: bold;
-    margin: 16px;
+    padding: 32px;
 }
 
 .top-text-container h2 {
     font-size: 1.5rem;
     text-align: center;
-    margin: 16px;
-    padding: 0 4px;
+    padding: 16px;
+}
+
+a, .nav-links, h1, h2, section, div, iframe {
+    border: red solid;
+}
+
+.embed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 50%;
+    padding-bottom: 56.25%;
 }
 
 .video-embed {
-    width: 784px;
-    height: 441px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-#video, #music {
-    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 .music-embed {
@@ -137,7 +152,7 @@ section {
     width: 80%;
     max-width: 1000px;
     height: 400px;
-    text-align: centre;
+    
 }
 
 .bio-container {
@@ -227,28 +242,22 @@ section {
 
 
 @media (max-width: 800px) {
-    .video-embed {
-        width: 560px;
-        height: 315px;
-    }
+    
 }
 
-@media (max-width: 560px) { 
-    .video-embed {
-        width: 448px;
-        height: 252px;
-    }
+@media (max-width: 600px) { 
+   
 }
 
-@media (max-width: 450px) { 
-    .video-embed {
-        width: 360px;
-        height: 203px;
+@media (max-width: 500px) { 
+    
+    .nav-links a {
+        font-size: 1rem;
     }
     .top-container h1 {
         font-size: 2rem;
     }
-    .nav-links a, .top-container h2 {
+    .top-container h2 {
         font-size: 1rem;
     }
 }
