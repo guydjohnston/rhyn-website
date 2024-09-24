@@ -136,7 +136,7 @@ section {
 
 .music-embed {
     border-radius: 8px;
-    width: 80%;
+    width: 70%;
     max-width: 1000px;
     height: 400px;
     
@@ -227,19 +227,28 @@ section {
     object-fit: cover;
 }
 
+@media (max-width: 600px) {
+    .top-container h1 {
+        font-size: 2rem;
+    }
+    .top-container h2 {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 500px) { 
     .navbar {
         justify-content: center;
     }
     .nav-links a {
         font-size: 1rem;
-        padding: 4px;
+        padding: 8px;
     }
-    .top-container h1 {
-        font-size: 2rem;
+    .navbar {
+        padding: 8px 0;
     }
-    .top-container h2 {
-        font-size: 1rem;
+    main {
+        padding-top: 98px;
     }
 }
 
@@ -253,4 +262,8 @@ section {
     #rhyn-image2 {
         width: 100%;
     }
+}
+
+a {
+    border: red solid;
 }
