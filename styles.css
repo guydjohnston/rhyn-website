@@ -30,6 +30,8 @@ header {
     max-width: 1400px;
     margin: 0 auto;
     background-color: #111;
+    display: flex;
+    flex-direction: column;
 }
 
 .social-icons {
@@ -51,12 +53,12 @@ header {
 .navbar {
     display: flex;
     justify-content: flex-end;
+    padding: 16px 0;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    padding: 16px 0;
 }
 
 .nav-links a {
@@ -111,25 +113,25 @@ section {
     font-size: 3rem;
     text-align: center;
     font-weight: bold;
-    margin: 16px;
+    padding: 16px;
 }
 
 .top-text-container h2 {
     font-size: 1.5rem;
     text-align: center;
-    margin: 16px;
-    padding: 0 4px;
+    padding: 16px;
+}
+
+.embed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .video-embed {
-    width: 784px;
-    height: 441px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-#video, #music {
-    text-align: center;
+    aspect-ratio: 16 / 9;
+    width: 80%;
+    max-width: 1000px;
 }
 
 .music-embed {
@@ -137,7 +139,7 @@ section {
     width: 80%;
     max-width: 1000px;
     height: 400px;
-    text-align: centre;
+    
 }
 
 .bio-container {
@@ -225,30 +227,22 @@ section {
     object-fit: cover;
 }
 
-
-@media (max-width: 800px) {
-    .video-embed {
-        width: 560px;
-        height: 315px;
+@media (max-width: 500px) { 
+    
+    .navbar {
+        justify-content: center;
     }
-}
-
-@media (max-width: 560px) { 
-    .video-embed {
-        width: 448px;
-        height: 252px;
-    }
-}
-
-@media (max-width: 450px) { 
-    .video-embed {
-        width: 360px;
-        height: 203px;
+    .nav-links a {
+        font-size: 1rem;
+        padding: 4px;
     }
     .top-container h1 {
         font-size: 2rem;
     }
-    .nav-links a, .top-container h2 {
+    .top-container h2 {
         font-size: 1rem;
+    }
+    .top-image-container, .contact-image-container {
+        
     }
 }
