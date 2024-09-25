@@ -244,11 +244,8 @@ section {
 
 @media (max-width: 450px) { 
     .nav-links a {
-        padding: 12px;
+        padding: 16px 12px;
         font-size: 1rem;
-    }
-    .navbar {
-        padding: 12px 0;
     }
     main {
         padding-top: 100px;
@@ -257,13 +254,7 @@ section {
 
 @media (max-width: 380px) { 
     .nav-links a {
-        padding: 8px;
-    }
-    .navbar {
-        padding: 8px 0;
-    }
-    main {
-        padding-top: 90px;
+        padding: 16px 8px;
     }
     .contact-text-container h2 {
         font-size: 1.5rem;
