@@ -234,15 +234,18 @@ section {
     .top-container h2 {
         font-size: 1rem;
     }
-}
-
-@media (max-width: 500px) { 
-    .navbar {
-        justify-content: center;
+    .top-container, .contact-container {
+        flex-direction: column;
+    }
+    .top-image-container, .contact-image-container {
+        min-width: unset;
     }
 }
 
 @media (max-width: 450px) { 
+    .navbar {
+        justify-content: center;
+    }
     .nav-links a {
         padding: 16px 12px;
         font-size: 1rem;
@@ -262,12 +265,6 @@ section {
 }
 
 @media (max-width: 300px) {
-    .top-container, .contact-container {
-        flex-direction: column;
-    }
-        .top-image-container, .contact-image-container {
-        min-width: unset;
-    }
     #rhyn-image2 {
         width: 100%;
     }
