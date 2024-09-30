@@ -53,10 +53,11 @@ header {
 .navbar {
     display: flex;
     justify-content: flex-end;
-    padding: 16px 0;
+    align-items: center;
 }
 
 .menu-btn {
+    display: none;
     border: none;
     background-color: #111;
     cursor: pointer;
@@ -75,6 +76,8 @@ header {
 .nav-links {
     display: flex;
     list-style: none;
+    align-items: center;
+    padding: 16px 0;
 }
 
 .nav-links a {
@@ -237,12 +240,6 @@ section {
 }
 
 @media (max-width: 600px) {
-    .top-container h1 {
-        font-size: 2rem;
-    }
-    .top-container h2 {
-        font-size: 1rem;
-    }
     .top-container, .contact-container {
         flex-direction: column;
     }
@@ -252,25 +249,26 @@ section {
 }
 
 @media (max-width: 450px) { 
-    .navbar {
-        justify-content: center;
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 110px;
+        background-color: #111;
+        width: 100%;
+        padding: unset;
     }
-    .nav-links a {
-        padding: 16px 12px;
-        font-size: 1rem;
+    .nav-links.active {
+        display: flex;
     }
-    main {
-        padding-top: 100px;
+    .menu-btn {
+        display: block;
     }
 }
 
-@media (max-width: 380px) { 
-    .nav-links a {
-        padding: 16px 8px;
-    }
-    .contact-text-container h2 {
-        font-size: 1.5rem;
-    }
+a, ul {
+    border: solid red 1px;
 }
 
 @media (max-width: 300px) {
