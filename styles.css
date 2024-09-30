@@ -65,8 +65,8 @@ header {
 
 .menu-btn, .nav-links a {
     color: #fff;
-    padding: 16px;
     font-size: 1.2rem;
+    padding: 16px;
 }
 
 .menu-btn:hover, .nav-links a:hover {
@@ -77,6 +77,9 @@ header {
     display: flex;
     list-style: none;
     align-items: center;
+}
+
+.nav-links li {
     padding: 16px 0;
 }
 
@@ -249,6 +252,9 @@ section {
 }
 
 @media (max-width: 450px) { 
+    .menu-btn {
+        display: block;
+    }
     .nav-links {
         display: none;
         flex-direction: column;
@@ -259,16 +265,12 @@ section {
         width: 100%;
         padding: unset;
     }
+    .nav-links li:last-child {
+        padding-bottom: 32px;
+    }
     .nav-links.active {
         display: flex;
     }
-    .menu-btn {
-        display: block;
-    }
-}
-
-a, ul {
-    border: solid red 1px;
 }
 
 @media (max-width: 300px) {
